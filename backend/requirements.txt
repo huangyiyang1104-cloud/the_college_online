@@ -1,0 +1,36 @@
+# ---- Web 框架 ----
+fastapi==0.121.0
+uvicorn[standard]==0.38.0
+
+# ---- 数据库 ----
+sqlalchemy==2.0.44
+pymysql==1.1.2
+cryptography==46.0.3
+
+# ---- 配置与鉴权 ----
+pydantic-settings==2.12.0
+pyjwt==2.10.1
+python-multipart==0.0.20
+
+# ---- 缓存与对象存储 ----
+redis==6.4.0
+minio==7.2.18
+
+# ---- Excel 导入 ----
+openpyxl==3.1.5
+
+# ---- 向量库客户端 ----
+# Milvus 服务由 deploy/docker-compose.yml 提供（standalone 标准版），
+# 这里只装客户端；不要用 milvus-lite（嵌入式版与标准版 API 有差异）
+pymilvus==3.0.2
+
+# ---- 阿里云号码认证（注册验证码）----
+alibabacloud_dypnsapi20170525==2.0.0
+
+# ---- 腾讯云语音（TTS 播报 / ASR 语音作答）----
+tencentcloud-sdk-python-common==3.1.200
+tencentcloud-sdk-python-tts==3.1.197
+tencentcloud-sdk-python-asr==3.1.200
+
+# ---- PDF 解析（简历面试，本地提取不依赖外网）----
+pymupdf==2.1

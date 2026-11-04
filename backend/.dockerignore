@@ -1,0 +1,18 @@
+# 虚拟环境与缓存：镜像内会重新安装依赖
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 密钥与本地配置：由 compose 的 env_file 注入，绝不能打进镜像
+.env
+
+# 运行日志与临时产物
+*.log
+build.log
+organize*.log
+uvicorn*.log
+
+# 本地数据文件
+scripts/*.xlsx
+scripts/*.pdf

@@ -1,0 +1,49 @@
+# ---------- 密钥与环境（绝对不能提交）----------
+# .env 里含数据库密码、JWT 密钥、云厂商 AccessKey、腾讯云 SecretKey
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+deploy/.env
+deploy/.env.*
+!deploy/.env.example
+# nginx Basic Auth 凭据（含密码哈希）
+deploy/.htpasswd
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- Node ----------
+node_modules/
+dist/
+.vite/
+*.local
+
+# ---------- 日志与临时产物 ----------
+*.log
+backend/uvicorn*.log
+frontend-*/build.log
+deploy/build_api.log
+rvc-service/*.log
+
+# ---------- 本地数据与模型 ----------
+*.pth
+*.index
+*.safetensors
+*.pt
+
+# ---------- 编辑器与系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# IDE 助手的工作区数据（含会话缓存，不进仓库）
+.codebuddy/
